@@ -1,0 +1,60 @@
+.mobileMenuActive {
+  padding: 30px;
+  position: fixed;
+  background-color: white;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  transform: translateY(1000%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.mobileMenu {
+  padding: 30px;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.hamburger{
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .desktopMenu{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .desktopMenu{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .desktopMenu{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+
+}
